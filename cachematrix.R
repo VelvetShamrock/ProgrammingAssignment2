@@ -1,8 +1,9 @@
 ## Matrix inversion
+## makeCacheMatrix contains setInverse and getInverse functions 
 
 makeCacheMatrix <- function(x = matrix()) {
   i <- NULL
-  <- function(y) {
+  set <- function(y) {
     x <<- y
     m <<- NULL
   }
@@ -14,7 +15,7 @@ makeCacheMatrix <- function(x = matrix()) {
        getInverse = getInverse)
 }
 
-## Return matrix inverse 
+## Return matrix inverse. This is the core of the module! 
 
 cacheSolve <- function(x, ...) {
   i <- x$getInverse()
